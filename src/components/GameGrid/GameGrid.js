@@ -1,6 +1,10 @@
 import React from "react";
 
 import WordButton from "../WordButton";
+import travel from "../../images/travel.jpg"
+import pic1 from "../../images/pic1.jpg"
+import pic2 from "../../images/pic2.jpg"
+import pic3 from "../../images/pic3.jpg"
 
 import * as styles from "./GameGrid.module.css";
 
@@ -46,6 +50,15 @@ export function SolvedWordRow({ ...props }) {
   });
   // if there is an image available render it as a popover
   const isImageAvailable = props.imageSrc != null;
+  let pic
+  if (props.imageSrc === "pic1")
+    pic = pic1
+  else if (props.imageSrc === "pic2")
+    pic = pic2
+  else if (props.imageSrc === "pic3")
+    pic = pic3
+  else
+    pic = travel
   return (
     <animated.div style={springProps}>
       {!isImageAvailable ? (
@@ -72,7 +85,7 @@ export function SolvedWordRow({ ...props }) {
           </PopoverTrigger>
           <PopoverContent>
             <div>
-              <img src={props.imageSrc} />
+              <img src={pic} />
             </div>
           </PopoverContent>
         </Popover>

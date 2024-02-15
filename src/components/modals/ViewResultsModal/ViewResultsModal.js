@@ -1,4 +1,5 @@
 import React from "react";
+import barcode from "../../../images/barcode.png"
 
 import { generateEmojiGrid } from "../../../lib/game-helpers";
 import CountdownToNextPuzzle from "../../CountdownToNextPuzzle";
@@ -23,14 +24,12 @@ function ViewResultsModal() {
       footerElements={<ShareScoreButton buttonText={"Share Your Score!"} />}
     >
       <div className="flex flex-col place-content-center">
-        <p className="text-center font-[600]">
-          Your Guesses Are Represented Below
-        </p>
+      <p>{"Here is the secret code to your prize in the mailroom: 140166"}</p>
+      <img src={barcode} width="150px"></img>
         <span className="text-center whitespace-pre mb-2">
           {"\n"}
           {generateEmojiGrid(gameData, submittedGuesses)}
         </span>
-        <CountdownToNextPuzzle />
       </div>
     </BaseModal>
   );
