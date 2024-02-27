@@ -1,4 +1,4 @@
-This is forked from https://github.com/and-computers/react-connections-game/commits?author=weallwegot and modified to be a Valentines Day riddle to a gift prize for my girlfriend.
+This game is forked from https://github.com/and-computers/react-connections-game and modified to be a Valentines Day riddle to a gift prize for my girlfriend. Kudos to jcp (https://github.com/weallwegot) for this repository. 
 
 # Connections (React, Tailwind, Shadcn/ui)
 
