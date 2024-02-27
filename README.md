@@ -1,3 +1,5 @@
+This is forked from https://github.com/and-computers/react-connections-game/commits?author=weallwegot and modified to be a Valentines Day riddle to a gift prize for my girlfriend.
+
 # Connections (React, Tailwind, Shadcn/ui)
 
 This is a clone of the [NYT Connections Game](https://www.nytimes.com/games/connections). Which itself seems to be an unacknowledged clone of the British game [`Only Connect`](https://kotaku.com/new-york-times-connections-only-connect-puzzle-wordle-1850553072).
